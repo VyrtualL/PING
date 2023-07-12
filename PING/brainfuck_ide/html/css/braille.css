@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "FrBraille";
+    src: url("./braille.ttf") format('truetype');
+}
+
+#brailleButton {
+    position: relative;
+    z-index: 9999;
+}
+
+label {
+    position: relative;
+    z-index: 9999;
+}

@@ -1,0 +1,75 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+@font-face {
+    font-family: Comic Mono;
+    font-weight: normal;
+    src: url(./ComicMono.ttf);
+}
+
+.container{
+    height: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr;   
+}
+
+.menu {
+    position: absolute;
+    padding: 10px;
+    left: 150px;
+    bottom: 0;
+    width: 100%;
+}
+
+.windowTitle {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    padding: 5px;
+    height: auto;
+    width: fit-content;
+}
+
+.windowControls{
+    float: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 5px;
+    width: 100px;
+}
+
+.windowControls button{
+    outline: 0;
+    border: 0;
+    padding: 5px;
+    background: none;
+}
+
+.titleBarStyle{
+    background: #202327;
+    color: #FFF;
+    font-size: 10pt;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.windowControlsStyle{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.windowControlsStyle button{
+    color: #FFF;
+    font-weight: bold;
+}
+
+.windowControlsStyle button:hover{
+    background: #48494c;
+}

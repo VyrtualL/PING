@@ -1,0 +1,28 @@
+<div id="editor">++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.
+</div>
+    
+<script src="js/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/pop-up-compile-handler.js"></script>
+<script src="js/io.js"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/gruvbox");
+    editor.session.setMode("ace/mode/javascript");
+    // checks if the user made the combo ctrl + s or cmd + s
+    document.addEventListener('keydown', e => {
+        if (e.ctrlKey && e.key === 's' || e.metaKey && e.key === 's')
+        {
+            saveFile(editor.getValue());
+        }
+
+        if (e.ctrlKey && e.key === 'o' || e.metaKey && e.key === 'o')
+        {
+            openFile(editor);
+        }
+
+        if (e.ctrlKey && e.key === 'b' || e.metaKey && e.key === 'b')
+        {
+            compile(editor.getValue());
+        }
+    });
+</script>

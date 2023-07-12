@@ -1,0 +1,16 @@
+#container {
+    display: flex;
+}
+#grid {
+    flex: 1;
+    /* max-height: 80vh;
+    overflow-y: auto; */
+    width: 100%;
+}
+
+#terminal-container {
+    width: 800px;
+    height: 450px;
+    margin: 0 auto;
+    padding: 2px;
+}

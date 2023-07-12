@@ -1,0 +1,115 @@
+/*place terminal above code*/
+
+@font-face {
+   font-family: 'MonoComic';
+   src: url('./ComicMono.ttf')  format('truetype');
+}
+
+.container {
+}
+
+#terminal {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+
+.xterm{
+   position: absolute;
+   top: 0%;
+   bottom: 0%;
+   left: 0%;
+   right: 0%;
+}
+
+.xterm-viewport {
+   position: absolute;
+   top: 0%;
+   bottom: 0%;
+   left: 0%;
+   right: 0%;
+}
+
+.pop {
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 20;
+}
+
+#code {
+   font-family: "MonoComic";
+   display: grid;
+   grid-template-rows: 1fr;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+
+#editor {
+   font-family: "MonoComic";
+   position: relative;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+
+#memory {
+   font-family: "Comic Sans MS", "Comic Sans", cursive;
+   background-color: grey;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+
+#poem {
+   background-color: coral;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   overflow: scroll;
+   overflow-x: hidden;
+   -ms-overflow-style: none;  /* IE and Edge */
+   scrollbar-width: none;  /* Firefox */
+}
+
+#poem::-webkit-scrollbar {
+   display: none;
+}
+
+#poemTitle {
+   font-weight: bold;
+   position: relative;
+   top: 0;
+   left: 0;
+}
+
+#poemContent {
+   position: relative;
+   left: 5%;
+}
+
+#poemAuthor {
+   position: relative;
+   float: right;
+   padding: 0;
+   margin: 0;
+}
+
+#menu-container {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   margin: 0;
+}

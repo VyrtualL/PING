@@ -1,0 +1,41 @@
+.hBorder {
+    background-color: black;
+    cursor: row-resize;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.vBorder {
+    background-color: black;
+    cursor: col-resize;
+    width: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#menuBorder {
+    background-color: black;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+#terminalBorder {
+    top: 50%;
+}
+
+#poemBorder {
+    left: 33%;
+}
+
+#codeBorder {
+    top: 65%;
+}

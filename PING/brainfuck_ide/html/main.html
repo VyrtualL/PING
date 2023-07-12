@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>PING IDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <header>
+        <!-- SCRIPTS -->
+        <script src="../node_modules/xterm/lib/xterm.js"></script>
+        <script src="../node_modules/xterm-addon-attach/lib/xterm-addon-attach.js"></script>
+        <script src="../node_modules/xterm-addon-fit/lib/xterm-addon-fit.js"></script>
+        <script src="../node_modules/xterm-addon-search/lib/xterm-addon-search.js"></script>
+        <script src="../node_modules/xterm-addon-serialize/lib/xterm-addon-serialize.js"></script>
+        <script src="../node_modules/xterm-addon-unicode11/lib/xterm-addon-unicode11.js"></script>
+        <script src="../node_modules/xterm-addon-web-links/lib/xterm-addon-web-links.js"></script>
+        <script src="../node_modules/xterm-addon-webgl/lib/xterm-addon-webgl.js"></script>
+        <script src="js/jquery-3.7.0.min.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="../node_modules/xterm/css/xterm.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/tileBar.css" />
+        <link rel="stylesheet" href="css/border.css">
+        <link rel="stylesheet" href="css/braille.css"/>
+        <!--Meteo-->
+        <link id ="themeLink" rel="stylesheet" href="" />
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+        </header>
+    </head>
+    <body>
+        <!--function to select theme-->
+        <div id="weather" hidden="true">
+            <script src="js/weather.js"></script>
+        </div>
+        <div class="codingScreen">
+            <div id="terminal">
+            </div>
+            <div id="poem">
+            </div>
+            <div id="code">
+            </div>
+            <div id="memory">
+            </div>
+        </div>
+        <div id="title" class="titleBar titleBarStyle">
+            <div align=center id="menu-container"></div>
+            <div>
+                <input type="checkbox" id="brailleButton">
+                <label id="LabelbrailleButton" for="brailleButton">Braille</label>
+            </div>
+            <div id="ide" class="windowTitle">
+                PING IDE
+            </div>
+            <div class="windowControls windowControlsStyle">
+                <button id="minimize">-</button>
+                <button id="maximize">+</button>
+                <button id="quit">x</button>
+            </div>
+        </div>
+        <div id="borders">
+        </div>
+        <div id="currentFile" hidden="true"></div>
+        <script src="js/zoom.js"></script>
+        <script src="js/main-script.js"></script>
+        <script src="js/titleBar.js"></script>
+        <script src="js/braille.js"></script>
+        <!--function to collect menu-->
+        <script src="js/menu.js"></script>
+    </body>
+</html>
